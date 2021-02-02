@@ -10,25 +10,47 @@
 
 
         //Méthode split 
+        // let str = "bonjour les nouveaux dev";
+
         // function maj(str) {
-        // const str = "bonjour les nouveaux dev";
-        // console.log(str.split(' '))
-        //on split en fonction des espaces. 
+        //     console.log(str.split(' '))
+        //         // on split en fonction des espaces.
 
 
-        //Avec un compteur dès qu'on tombe sur le premier mot, on le pousse dans un tableau, on transforme la première lettre en maj et on supprime l'ancien mot 
-        // const array = str.split(' ');
-        // const newArray = [];
+        //     // Avec un compteur dès qu 'on tombe sur le premier mot, on le pousse dans un tableau, on transforme la première lettre en maj et on supprime l'
+        //     // ancien mot
+        //     const array = str.split(' ');
+        //     const newArray = [];
 
-        //la methode charAt renvoie une nouvelle chaine de caractère correspondant à l'index donné puis on utilise la methode pour mettre la première lettre en maj. Ensuite on concataine
+        //     // la methode charAt renvoie une nouvelle chaine de caractère correspondant à l 'index donné puis on utilise la methode pour mettre la première lettre en maj. Ensuite on concataine
         //     for (x = 0; x < array.length; x++) {
         //         newArray.push(array[x].charAt(0).toUpperCase() + array[x].slice(1))
         //     }
         //     return newArray.join(' ');
         // }
-        // console.log(maj("bonjour les nouveaux dev"));
-        // maj();
+        // // console.log(maj("bonjour les nouveaux dev"));
+        // console.log(maj(str));
 
+        const str = "   salut les amis"
+        let i = 0
+        let newWord = ""
+        let newLen = str.length
+
+        function premierMot(str) {
+            while (i < newLen && str[i] == " ") {
+                console.log(str[i])
+                i++
+            }
+            while (str[i] != " ") {
+                newWord = newWord + str[i]
+                i++
+            }
+            //console.log(newWord);
+            return newWord;
+        }
+
+
+        console.log(premierMot(str));
 
 
 
@@ -57,38 +79,38 @@
         // }
         // primeNext(7);
 
-        function primeNext(nombre) {
-            let resultat;
+        // function primeNext(nombre) {
+        //     let resultat;
 
-            for (i = 0; i < nombre; i++) {
-                if (nombre == 2) {
-                    resultat = nombre;
-                    console.log(resultat)
-                    return resultat
-                } else if (nombre % 2 != 0) { // nombre % 2 == 1 
-                    resultat = nombre
-                    console.log(resultat)
-                    return resultat
-                }
-                for (j = 1; j > nombre; j++) {
+        //     for (i = 0; i < nombre; i++) {
+        //         if (nombre == 2) {
+        //             resultat = nombre;
+        //             console.log(resultat)
+        //             return resultat
+        //         } else if (nombre % 2 != 0) { // nombre % 2 == 1 
+        //             resultat = nombre
+        //             console.log(resultat)
+        //             return resultat
+        //         }
+        //         for (j = 1; j > nombre; j++) {
 
-                    if (nombre % 2 === 0) {
-                        nombre++
-                    }
+        //             if (nombre % 2 === 0) {
+        //                 nombre++
+        //             }
 
-                }
-                return nombre
-                    // else if (nombre % 2 == 0) {
-                    //     for (j = 0; j > nombre; j++) {
-                    //         nombre++
-                    //     }
-                    //     return nombre
-                    // }
+        //         }
+        //         return nombre
+        //             // else if (nombre % 2 == 0) {
+        //             //     for (j = 0; j > nombre; j++) {
+        //             //         nombre++
+        //             //     }
+        //             //     return nombre
+        //             // }
 
 
-            }
-        }
-        primeNext(12);
+        //     }
+        // }
+        // primeNext(12);
 
 
         //FONCTION QUI PREND DEUX CHAINES DE CARACTERE EN PARAMETRE ET QUI RENVOIE UNE CHAINE DE CARACTERE EN FAISANT LA COPIE DE LA PREMIERE DANS LA DEUXIEME
