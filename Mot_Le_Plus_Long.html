@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le mot le plus long</title>
+    <script>
+        // Ecrire une fonction qui prend en paramètre un tableau contenant uniquement des chaines de caractère et sortir le mot le plus long.
+
+        function gdMot() {
+            let tab = ["un", "deux", "trois"];
+
+            let motPlusLong = [];
+
+            for (i = 0; i < tab.length; i++) {
+
+                if (tab[i].length > motPlusLong) {
+                    motPlusLong = tab[i];
+                }
+                return motPlusLong;
+            }
+        }
+
+        console.log(gdMot());
+
+
+
+        //Length -1 est utilisé quand on fait parcourir la boucle dans le sens inverse. Il nous plae à la fin 
+
+        // let tab = ["1", "2", "3", "4"];
+
+        // let len = tab.length - 1;
+
+        // for (let i = len; i >= 0; i--) {
+        //     console.log(i, tab[i])
+        // }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

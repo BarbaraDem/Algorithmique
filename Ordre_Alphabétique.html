@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordre Alphabétique</title>
+    <script>
+        // Ecrire une fonction qui prend en paramètre une chaine de caractère 
+        //Et qui remet cette meme chaine de caractère par ordre alphabétique. 
+
+
+        const mot = "bonjour";
+
+        function ordre(mot) {
+
+            const lettre = mot.split("");
+            lettre.sort()
+            console.log(lettre);
+
+            let tab = [];
+
+            for (i = 0; i < lettre.length; i++) {
+
+                const newTab = tab.push(lettre) + lettre.join('')
+                console.log(newTab);
+
+                tab = lettre.join("");
+                console.log(tab);
+            }
+        }
+
+        ordre(mot);
+
+        console.log(ordre(mot));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

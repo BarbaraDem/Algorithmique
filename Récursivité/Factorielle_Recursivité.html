@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> La récursivité avec une opération factorielle</title>
+    <script>
+        // Avec une boucle : 
+
+        // let nombre2 = 1;
+
+        // function factorielle(nombre) {
+
+        //     for (j = nombre; j > 0; j--) {
+        //         nombre2 *= j
+        //     }
+        //     return nombre2
+
+        // }
+        // console.log(factorielle(5));
+
+
+        // Avec la récursivité :
+
+        // function factorielle(nombre) {
+        //     if (nombre == 1 || nombre == 0) {
+        //         nombre = 1;
+        //         return nombre;
+        //     } else {
+        //         nombre = nombre * factorielle(nombre - 1);
+        //         return nombre;
+        //     }
+        // }
+        // console.log(factorielle(5));
+
+        function factorielle2(nombre) {
+
+            if (nombre > 1) {
+                console.log(nombre);
+                nombre = nombre * factorielle2(nombre - 1);
+                return nombre
+            } else {
+                console.log(nombre);
+                return nombre;
+            }
+        }
+        console.log(factorielle2(5));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

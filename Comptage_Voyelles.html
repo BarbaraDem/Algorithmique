@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyelles </title>
+    <script>
+        //Ecrire une fonction qui va compter le nombre de voyelle qu'on a dans un mot ou phrase
+
+        // let phrase = "Le monde est beau";
+
+        // let voyelles = ["a", "e", "i", "o", "u", "y"];
+
+        // function compte(phrase) {
+        //     let nombre = 0;
+        //     for (let letter of phrase) {
+        //         if (voyelles.includes(letter)) {
+        //             nombre++;
+        //         }
+        //     }
+        //     return nombre;
+        //     console.log("Le nombre de voyelles est de : " + nombre);
+        // }
+        // let resultat = compte(phrase);
+        // console.log("Le nombre de voyelles est de :" + resultat);
+
+        // let phrase = "Le monde est beau";
+        // let voyelles = 0;
+
+        function compte() {
+            for (i = 0; i < phrase.length; i++) {
+                let phrase1 = phrase.charAt(i);
+                console.log(phrase1);
+
+                if (phrase1 == "a" || phrase1 == "e" || phrase1 == "i" || phrase1 == "o" || phrase1 == "u" || phrase1 == "y") {
+                    voyelles++;
+                }
+            }
+            console.log("le nombre de voyelles est de : " + voyelles);
+        }
+        compte();
+
+        function compte(phase) {
+            let phrase = "Le monde est beau";
+            let voyelle = "aeiouy";
+            let count = 0;
+
+            for (i = 0; i < phrase.length; i++) {
+                let index = voyelle.indexOf(phrase[i]);
+                //console.log(index);
+
+                if (index !== -1) {
+                    count++
+                }
+            }
+            return count
+
+        }
+        console.log(compte());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

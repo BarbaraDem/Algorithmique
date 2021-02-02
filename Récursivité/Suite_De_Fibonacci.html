@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La suite de Fibonacci : </title>
+    <script>
+        // Elle commence par 0 et 1
+        // Ensuite chaque terme est la somme des deux termes précédent 
+        // 0 , 1 , 1 (0+1),2 (1+1),3 (1+2),5(2+3), ...
+        // 0,1,1,2,3,5,8,13,21,34,55,89,144, ...
+        // F0= 0 / F1= 1 / F2= 1 / F3= 2 /F4= 3 / F5= 5 ...
+        // Fn= Fn-2 / Fn-1  pour n >= 2 ;
+
+
+        function suite(nombre) {
+            if (nombre === 0) {
+                return 0;
+            } else if (nombre === 1) {
+                return 1;
+            } else {
+                nombre = suite(nombre - 1) + suite(nombre - 2);
+                return nombre;
+            }
+        }
+        console.log(suite(10));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

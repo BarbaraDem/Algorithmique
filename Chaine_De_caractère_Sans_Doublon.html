@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaine de caractère sans doublon</title>
+    <script>
+        //AFFICHE UNE CHAINE DE CARACTERE SANS AVOIR DE DOUBLON AU NIVEAU DES LETTRES :
+
+        // let str = "salutlesamis";
+        // let newStr = "";
+        // let bool = null;
+        // for (i = 0; i < str.length; i++) {
+        //     //console.log([i])
+        //     for (j = 0; j < str.length; j++) {
+        //         //console.log([j])
+        //         if (str[i] == str[j]) {
+        //             bool = true;
+        //             // if (str[i] !== str[j]) {
+        //             //     bool = false;
+        //         } else if (str[i] !== str[j]) {
+        //             bool = false;
+        //         }
+        //     }
+        // }
+        // console.log(bool)
+
+        // console.log(str)
+
+        // let str = "salutlesamis";
+        // let newPhrase = "";
+
+        // for (i = 0; i < str.length; i++) {
+        //     let phraseCompteur = str[i] = 0;
+        //     if (str[i] == phraseCompteur) {
+        //         //console.log(str[i])
+        //     }
+        //     for (i = 0; i < str.length; i++) {
+        //         newPhrase = newPhrase + str[i]
+
+        //         console.log(newPhrase)
+        //     }
+        // }
+
+
+        // PREMIERE CORRECTION (Mathieu) : 
+
+        // function quiNeDoublePasLesCaracteres(str1, str2) {
+        //     let fusionStr = str1 + str2
+        //     let str3 = ""
+        //     str3 += fusionStr[0] 
+
+        //     // Je parcours la chaine de caractère avec le compteur i
+        //     for (let i = 0; i < fusionStr.length; i++) {
+        //         // console.log(fusionStr.length)
+
+        //         // J'initialise une variable égalité à false. 
+        //         let egalite = true;
+
+        //         // A chaque passage de boucle dans la variable str3 qui prend  le premier caractère 
+        //         // Si le premier caractère de ma chaine de caractère est égal au premier caractère
+        //         for (let j = 0; j < str3.length; j++) {
+        //             //console.log(str3.length)
+        //             if (fusionStr[i] === str3[j]) {
+        //                 console.log(str3[j])
+        //                 egalite = false;
+        //             }
+        //         }
+        //         if (egalite == true) {
+        //             str3 += fusionStr[i] // str3 = str3 + fusionStr[i]
+        //         }
+        //     }
+        //     console.log("Les strings '", str1, "' et' ", str2, "' deviennent :", str3)
+        // }
+        // quiNeDoublePasLesCaracteres('salut les amis', 'bienvenue à vous')
+
+
+        //CORRECTION LOTFI : 
+
+        // const str = "coucou"
+
+        // function removeDuplicates(str) {
+        //     // Used as index in the modified string
+        //     let n = str.length
+        //         // Traverse through all characters
+        //     let res = ''
+        //     let a
+        //     for (a = 0; a < n; a++) {
+        //         // Check if str[i] is present before it
+        //         console.log(a, "passage de a ", str[a])
+        //         let j
+        //         for (j = a + 1; j < n; j++) {
+        //             console.log(j, "passage de j", str[j])
+        //             if (str[a] == str[j]) break
+        //             console.log(str[a] == str[j])
+        //         }
+        //         // If not present, then add it to
+        //         // result.
+        //         if (j == n) {
+        //             res = res + str[a]
+        //         }
+        //     }
+        //     return res
+        // }
+        // console.log(removeDuplicates(str))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonction récursive</title>
+    <script>
+        /* Imaginons que nous sommes sur un damier et qu'un robot dépose des jetons sur toutes les cases que je lui demande
+                                                Admettons les 8 premières cases, dans ce cas je vais appeler une fonction qui va avancer sur la première case puis déposer le jeton, 
+                                                avancer sur la deuxième case puis déposer le jeton sur la deuxième case et ainsi de suite. Il y a donc une énorme suite d'instruction. 
+                                                Nous pouvons donc factoriser le code avec les fonctions récursives. Au lieu de donner des instructions à mon robot, j'appelle 
+                                                une fonction dans laquelle je donne en paramètre le nombre de case où le jetons doit être déposer par mon robot et tant que ce nombre de case 
+                                                est supérieur à 0 je le fais avancer et déposer un jeton. Une fois qu'il a déposer le premier jeton, j'auto appelle ma fonction pour qu'il le 
+                                                fasse sur toutes les cases restantes moins un. 
+                                                */
+        //Afficher le nombre de seconde : 
+        function timer(secondes) {
+            if (secondes > 0) {
+                //Afficher le nombre de seconde actuelle 
+                console.log(secondes); // Retourne 10.
+                timer(secondes - 1); // On auto appelle la fonction avec en paramètre, le nombre de seconde restante -1 // Renvoie 10 à 1(il manque le 0)
+                //Afficher 9
+                // timer(8)
+
+                //Afficer 8
+                // timer(7)
+                //...
+                //Une fois que timer = 0, on sort du if pour rentrer dans le else
+            } else {
+                console.log(secondes) //Dans le if le nombre de secondes sera équivalent à 0, on a juste a console.log seconde dans un else
+            }
+        }
+        timer(10);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
